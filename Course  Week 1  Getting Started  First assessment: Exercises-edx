@@ -1,0 +1,41 @@
+#2. Create a numeric vector containing the numbers 2.23, 3.45, 1.87, 2.11, 7.33, 18.34, 19.23.
+x <- c(2.23, 3.45, 1.87, 2.11, 7.33, 18.34, 19.23)
+0
+What is the average of these numbers?
+mean(x)
+7.794286
+
+#3. Use a for loop to determine the value of  ∑25i=1i2.
+library(loop)
+soma
+install.packages("CARS")
+sum <- 0
+for(i in 1:25)
+  sum <- sum + i^2
+sum
+
+#4. The cars dataset is available in base R. You can type cars to see it. Use the class() 
+function to determine what type of object is cars. What is the name of the second column of cars?
+install.packages(cars)
+library(CARS)
+class(cars)
+data.frame 
+
+#5. How many rows does the cars object have?
+nrow(cars)
+50
+
+#6. What is the name of the second column of cars?
+Distância do conjuntos de dados 
+mean(cars[,2])
+dist
+
+#7. The simplest way to extract the columns of a matrix or data.frame is using [. 
+For example you can access the second column with cars[,2].
+What is the average distance traveled in this dataset?
+mean(cars[,2])  
+42.98
+
+#8. Familiarize yourself with the which() function. Which row of cars has a a distance of 85?
+which(cars[,2]==85)
+50
